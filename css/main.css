@@ -45,4 +45,5 @@ ul.posts li {
 }
 img {
   border-radius: 50%;
+  float: left; 
 }
