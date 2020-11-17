@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Social Media Dynamic Monitor
+title: "Social Media Dynamic Monitor"
 date: 2020-11-16
 ---
 
