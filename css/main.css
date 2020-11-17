@@ -21,8 +21,9 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family: 'Times', 'Times New Roman', 'serif';
-    color: #cc33ff;
+    font-family: 'Comic Sans', 'Comic Sans MS', 'cursive';
+    color: #009999;
+    font-weight: lighter;
 }
 p {
     font-size: 1.5em;
