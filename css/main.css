@@ -20,8 +20,8 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 2em;
-    font-family: 'Candara', 'cursive';
+    font-size: 1em;
+    font-family: 'Times', 'Times New Roman', 'serif';
     color: #009999;
     font-weight: lighter;
 }
