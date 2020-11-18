@@ -45,6 +45,12 @@ ul.posts li {
 }
 img {
   border-radius: 50%;
-  float: left; 
-  width: 200px; 
+}
+#content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
