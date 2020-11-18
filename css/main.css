@@ -53,6 +53,7 @@ img {
     height: 200px;
     width: 200px;
     float: right;
+    border: 5px solid #32a887;
     /*position: absolute;
     right:0;
     top:0;*/
