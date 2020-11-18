@@ -73,11 +73,12 @@ img {
 
 /* for social media logos. */
 .fa {
-  padding: 20px;
+  padding: 10px;
   font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
+  border-radius: 50%;
 }
 .fa-linkedin {
   background: #3385ff;
