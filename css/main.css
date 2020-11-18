@@ -70,3 +70,10 @@ img {
   width: 100%;
   height: 2.5rem;            /* Footer height */
 }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
