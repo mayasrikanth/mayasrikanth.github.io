@@ -50,6 +50,8 @@ ul.posts li {
 
 img {
     border-radius: 50%;
+    height: 150px;
+    width: 150px;
     position: absolute;
     right:0;
     top:0;
