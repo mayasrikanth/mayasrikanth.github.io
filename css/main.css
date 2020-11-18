@@ -70,10 +70,20 @@ img {
   width: 100%;
   height: 2.5rem;            /* Footer height */
 }
+
+/* for social media logos. */
 .fa {
   padding: 20px;
   font-size: 30px;
   width: 50px;
   text-align: center;
   text-decoration: none;
+}
+.fa-linkedin {
+  background: #3385ff;
+  color: white;
+}
+.fa-gmail {
+  background: #ff1a8c;
+  color: white;
 }
