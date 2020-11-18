@@ -50,13 +50,11 @@ ul.posts li {
 img {
   border-radius: 50%;
 }
-#content {
-    position: relative;
-}
+
 #content img {
     position: absolute;
     top: 0px;
-    left: 0px;
+    right: 0px;
 }
 
 #footer {
