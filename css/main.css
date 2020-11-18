@@ -22,7 +22,7 @@ a:hover {
 h1 {
     font-size: 3em;
     font-family: 'Times', 'Times New Roman', 'serif';
-    color: #b3b3cc;
+    color: #333;
     font-weight: lighter;
 }
 p {
@@ -50,8 +50,8 @@ ul.posts li {
 
 img {
     border-radius: 50%;
-    height: 175px;
-    width: 175px;
+    height: 180px;
+    width: 180px;
     float: right;
     /*position: absolute;
     right:0;
