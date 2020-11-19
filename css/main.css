@@ -72,6 +72,11 @@ img {
   height: 2.5rem;            /* Footer height */
 }
 
+.publication {
+  font-family:"Palatino Linotype", "Book Antiqua", 'Palatino', 'serif';
+  color: #808080;  
+}
+
 /* for social media logos. */
 .fa {
   padding: 10px;
