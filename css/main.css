@@ -49,11 +49,11 @@ ul.posts li {
 }
 
 img {
-    border-radius: 50%;
+    /*border-radius: 50%;*/
     height: 180px;
     width: 180px;
     float: right;
-    border: 10px solid #32a887;
+    /*border: 10px solid #32a887;*/
     /*position: absolute;
     right:0;
     top:0;*/
