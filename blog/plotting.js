@@ -1,4 +1,8 @@
-        
+       
+
+// echarts examples: https://echarts.apache.org/examples/en/index.html?theme=light
+// echarts docs: https://echarts.apache.org/en/tutorial.html#Overview%20of%20Style%20Customization
+
        // working on backend. 
     toxic_true = [1.94591015, 2.19722458, 2.19722458, 0.69314718, 0.,
        3.8286414 , 0.        , 1.09861229, 0.        , 1.09861229,
@@ -73,6 +77,28 @@
        130, 131];
 
 
+
+
+tf_labels = ['#toxicfeminism', '#feminismismanhating', '#feminismisawful', '@javed', '#rsa', '#itsneverokay', 
+  '@cia', 'whiners', '#erotica', '@libbyblog', '#sjwlogic', 
+  '@wendywglobal', 'rhyme', '#imwithsabotage', '@flagstaffghana',
+   'publicised', '#dkbiz', '#stress', 'pantry', '@tvietor', 
+   '@sunandavashisht', '@sonamakapoor', '#sheresisted', 
+   '#humanity', 'publishers', '@mlb', 'characters', 'shopkeeper', 
+   'checks', 'acknowledge', 'xenophobia']
+
+tf_x = [84.89871, 2.0533667, -35.445038, 83.3489, 51.80577, 26.994102, 
+57.476665, -5.086792, 26.323029, 83.75621, 51.34877, 59.246754, 52.790546, 
+-15.271239, -29.678585, 8.340472, -26.337261, -78.95914, 22.65036, 
+-60.80907, 37.481915, -27.743078, 0.33459777, -55.56171, -86.14176, 
+26.821083, -27.761173, 14.398789, -45.96514, -60.946968, -0.6507211]
+
+tf_y = [36.51358, -45.580444, 77.14228, 1.8861485, -4.4957547, 47.24307, 
+64.307594, 64.026024, -59.79952, -31.057081, -83.57386, -49.77101, 
+27.783325, -20.383978, 38.053284, -88.101456, -80.41315, -21.667597, 
+19.177082, 13.114715, 7.263311, -16.338219, -21.46236, -56.8539, 6.4833093]
+
+
     // var dataURL = "https://raw.githubusercontent.com/mayasrikanth/mayasrikanth.github.io/main/data/website-data.csv";
     // based on prepared DOM, initialize echarts instance
     var myChart = echarts.init(document.getElementById('pred1'));
@@ -113,18 +139,18 @@
           xAxis: {
               type: 'category',
               boundaryGap: false,
-              label: 'Weeks',
+              name: 'Weeks',
               data: [  0,   1,   2,   3,   4,   5,   6,   7,   8,   9,  10,  11,  12,
                     13,  14,  15,  16,  17,  18,  19,  20,  21,  22,  23,  24,  25,
                     26,  27,  28,  29,  30,  31,  32,  33,  34,  35,  36,  37,  38,
                     39,  40,  41,  42,  43,  44,  45,  46,  47,  48,  49,  50,  51,
                     52,  53,  54,  55,  56,  57,  58,  59,  60,  61,  62,  63,  64,
                     65,  66,  67,  68,  69,  70,  71,  72,  73,  74,  75,  76,  77,
-                    78,  79]
+                    78,  79],
           },
           yAxis: {
               type: 'value',
-              label: 'Log Raw Counts'
+              name: 'Log Raw Counts'
           },
           series: [
               {
@@ -167,7 +193,7 @@
               }
           },
           legend: {
-              data: ['True', 'Pred']
+              data: ['Log Raw Counts']
           },
           grid: {
               left: '3%',
@@ -188,7 +214,7 @@
           },
           yAxis: {
               type: 'value',
-              label: 'Log Raw Counts'
+              name: 'Log Raw Counts'
           },
           series: [
               {
@@ -202,8 +228,31 @@
           };
 
     allchart.setOption(option1);
+    allChart.setOption({
+      grid: { 
+      right: '8%'
+       }
+    });
       women_true = []
       women_pred = []
       women_all = []
 
+      /* Placeholder for another keyword.*/
 
+    var myChart1 = echarts.init(document.getElementById('pred2'));
+    var allchart1 = echarts.init(document.getElementById('all2'));
+    
+    myChart1.setOption(option);
+    myChart1.setOption({
+      grid: { 
+      left: '8%'
+       }
+    });
+
+
+    allchart1.setOption(option1);
+    allChart1.setOption({
+      grid: { 
+      right: '8%'
+       }
+    });

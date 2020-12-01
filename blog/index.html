@@ -7,15 +7,125 @@
     <script src="incubator-echarts-5.0.0-rc.3/dist/echarts.js"></script>
     <script src="papaparse.min.js"></script>
     <script src="require.js"></script>
+    <link rel="stylesheet" href="style.css">
     
 </head>
 
 
 <!--  https://www.papaparse.com/#remote-files --> 
 <body>
+
+    <div class="header">
+      <h1>Dynamic Keyword Algorithm</h1>
+      <p>key insights for social media data collection</p>
+    </div>
+
+    <div class="flex-container" style="padding-top: 25px;">
+
+      <div id="pred1" class="flex-child" style="width: 600px;height:400px;"></div>
+       
+      
+      
+      <div id="all1" class="flex-child" style="width: 600px;height:400px; padding-left:20px"></div>
+
+      <div  style="width:250px; height:250px; padding-right:20px; flex; overflow-y: scroll">
+        
+
+        <table class="styled-table">
+        <thead>
+                <tr>
+                    <th>Neighbor</th>
+                    <th>Cosine Distance</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                    <td>#feminismismanhating</td>
+                    <td>0.2984</td>
+            </tr>
+            <tr class="active-row">
+                    <td>#feminismisawful</td>
+                    <td>0.355857</td>
+            </tr>
+            <tr>
+                    <td>#sjwlogic</td>
+                    <td>0.508122</td>
+            </tr>
+            <tr>
+                    <td>whiners</td>
+                    <td>0.4963</td>
+            </tr>
+            <tr>
+                    <td>erotica</td>
+                    <td>0.4987</td>
+            </tr>
+                <!-- and so on... -->
+             </tbody>
+        </table>
+
+      </div>
+      
+    </div>
+    
+
+    <hr class='hr-style-one'>
+
+
+
+    <div class="flex-container" style="padding-top: 25px;">
+
+      <div id="pred2" class="flex-child" style="width: 600px;height:400px;"></div>
+       
+      
+      
+      <div id="all2" class="flex-child" style="width: 600px;height:400px; padding-left:20px"></div>
+
+      <div  style="width:250px; height:250px; padding-right:20px; flex; overflow-y: scroll">
+        
+
+        <table class="styled-table">
+        <thead>
+                <tr>
+                    <th>Neighbor</th>
+                    <th>Cosine Distance</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                    <td>#feminismismanhating</td>
+                    <td>0.2984</td>
+            </tr>
+            <tr class="active-row">
+                    <td>#feminismisawful</td>
+                    <td>0.355857</td>
+            </tr>
+            <tr>
+                    <td>#sjwlogic</td>
+                    <td>0.508122</td>
+            </tr>
+            <tr>
+                    <td>whiners</td>
+                    <td>0.4963</td>
+            </tr>
+            <tr>
+                    <td>erotica</td>
+                    <td>0.4987</td>
+            </tr>
+                <!-- and so on... -->
+             </tbody>
+        </table>
+
+      </div>
+      
+    </div>
+    
+
     <!-- prepare a DOM container with width and height -->
-    <div id="pred1" style="width: 600px;height:400px;"></div>
-    <div id="all1" style="width: 600px;height:400px;"></div>
+    <!--<div id="pred1" style="width: 600px;height:400px;"></div>
+    <div id="all1" style="width: 600px;height:400px;"></div> -->
+
+
+ 
 
 
     <script src="plotting.js"> </script>
